@@ -2,13 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 vals = np.linspace(0, 0.4, 1600, endpoint = False)
-x = lambda t: np.sin(800 * np.pi * t)
+x = lambda t: np.sin(2 * 72 * np.pi * t)
 a_vals = x(vals)
 
 def sawtooth(t):
     return 2 * (t - np.floor(t + 1 / 2))
 
-x = lambda t: sawtooth(240 * t)
+x = lambda t: sawtooth(24 * t)
 
 c_vals = np.array([x(val) for val in vals])
 
